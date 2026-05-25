@@ -32,13 +32,12 @@
     h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; margin-bottom: 0.75rem; }
     h1 em { font-style: italic; color: var(--accent); }
     .lead { font-size: 1.1rem; color: var(--muted); border-left: 3px solid var(--accent); padding-left: 1rem; margin: 1.5rem 0 2.5rem; line-height: 1.6; }
-    .photo-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 0.75rem; margin: 2.5rem 0; border-radius: var(--radius); overflow: hidden; }
-    .ph-main, .ph-side { background: linear-gradient(135deg, #e8e3db, #d4cfc7); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--muted); font-size: 0.8rem; gap: 0.4rem; padding: 1rem; }
-    .ph-main { min-height: 260px; border-radius: var(--radius); }
+    .photo-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 0.75rem; margin: 2.5rem 0; }
+    .ph-main { border-radius: var(--radius); overflow: hidden; min-height: 260px; background: #e8e3db; }
+    .ph-main img { width: 100%; height: 260px; object-fit: cover; display: block; }
     .ph-right { display: flex; flex-direction: column; gap: 0.75rem; }
-    .ph-side { min-height: 120px; border-radius: var(--radius); }
-    .ph-main span, .ph-side span { font-size: 1.5rem; }
-    .ph-main img, .ph-side img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius); }
+    .ph-side { border-radius: var(--radius); overflow: hidden; min-height: 120px; background: #e8e3db; }
+    .ph-side img { width: 100%; height: 120px; object-fit: cover; display: block; }
     .timeline { margin: 2.5rem 0; }
     .tl-item { display: grid; grid-template-columns: 80px 1fr; gap: 1rem; padding-bottom: 1.75rem; position: relative; }
     .tl-item:not(:last-child)::after { content: ''; position: absolute; left: 39px; top: 28px; bottom: 0; width: 1px; background: var(--border); }
@@ -54,16 +53,16 @@
 <body>
 
 <nav>
-  <a class="nav-logo" href="../index.html">International Project</a>
+  <a class="nav-logo" href="index.html">International Project</a>
   <ul class="nav-links">
-    <li><a href="../index.html#entries">Journal</a></li>
-    <li><a href="../index.html#team">Team</a></li>
+    <li><a href="index.html#entries">Journal</a></li>
+    <li><a href="index.html#team">Team</a></li>
   </ul>
 </nav>
 
 <div class="article-wrap">
 
-  <a class="back-link" href="../index.html">← Back to journal</a>
+  <a class="back-link" href="index.html">← Back to journal</a>
 
   <div class="entry-meta">
     <span class="dot"></span>
@@ -75,98 +74,91 @@
   <h1>Day 3 — <em>presentations & closing ceremony</em></h1>
 
   <p class="lead">
-      The final day of the hackathon — from last-minute slide preparations and a nervous pitch in front of the jury, to the winners announcement and a well-deserved celebration before heading home to Bruges.
+    The final day of the hackathon — from last-minute slide preparations and a nervous pitch in front of the jury, to the winners announcement and a well-deserved celebration before heading home to Bruges.
   </p>
 
-  <!-- PHOTO GRID — replace placeholders with your actual images -->
   <div class="photo-grid">
     <div class="ph-main">
       <img src="photos/IMG_4559.JPG" alt="Presentation">
-      <span>📷</span>
-      Main photo
     </div>
     <div class="ph-right">
       <div class="ph-side">
-        <img src="photos/IMG_4198.JPG" alt="Good-Boys">
-        <span>📷</span>
-        Photo 2
+        <img src="photos/IMG_4198.JPG" alt="The team">
       </div>
       <div class="ph-side">
-        <img src="photos/IMG_4215.JPG" alt="Presentation">
-        <span>📷</span>
-        Photo 3
+        <img src="photos/IMG_4215.JPG" alt="Closing ceremony">
       </div>
     </div>
   </div>
 
-<!-- TIMELINE — add or remove tl-item blocks as needed -->
-<div class="timeline">
+  <div class="timeline">
 
-  <div class="tl-item">
-    <div class="tl-time">07:00</div>
-    <div class="tl-body">
-      <h3>Early start — train to Liège</h3>
-      <p>We were up early to catch the morning train to Liège. An early start, but the excitement of the final day kept us going.</p>
+    <div class="tl-item">
+      <div class="tl-time">07:00</div>
+      <div class="tl-body">
+        <h3>Early start — train to Liège</h3>
+        <p>We were up early to catch the morning train to Liège. An early start, but the excitement of the final day kept us going.</p>
+      </div>
     </div>
+
+    <div class="tl-item">
+      <div class="tl-time">09:30</div>
+      <div class="tl-body">
+        <h3>Breakfast at HELMo</h3>
+        <p>We arrived at the university and joined our teammates for breakfast. A good opportunity to catch up before the busy final day ahead.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">10:00</div>
+      <div class="tl-body">
+        <h3>Presentation guidelines briefing</h3>
+        <p>The organisers held a short talk explaining how we were expected to present our project — structure, timing, and what the jury would be looking for. A useful guide before we got to work.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">10:30</div>
+      <div class="tl-body">
+        <h3>Final preparations — team name & slides</h3>
+        <p>We gathered as a team to finalise the last details: agreeing on our team name and putting together the PowerPoint presentation we would deliver in front of the other participants and the jury. A focused but energetic working session.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">12:00</div>
+      <div class="tl-body">
+        <h3>Lunch & conversations</h3>
+        <p>Over lunch we had the chance to chat with the lecturers and fellow participants about our respective projects. It was a relaxed and enjoyable break before the presentations began.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">13:00</div>
+      <div class="tl-body">
+        <h3>Presentations — pitching to the jury</h3>
+        <p>The presentation session kicked off at 1 p.m. We listened to the proposals from the other teams, each addressing a different challenge that had been put forward at the start of the hackathon. We also took the stage ourselves, presenting our project in front of all participants and the jury. A memorable moment after days of hard work.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">15:00</div>
+      <div class="tl-body">
+        <h3>Winners announced & closing celebration</h3>
+        <p>The jury announced the winners of the hackathon and we gathered for a small celebration with drinks. A great atmosphere to close out what had been an intense and rewarding weekend.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">16:00</div>
+      <div class="tl-body">
+        <h3>Farewell & train back to Bruges</h3>
+        <p>With the hackathon officially over, we packed our things, said our goodbyes, and headed back to Bruges. Tired but satisfied — a weekend well spent.</p>
+      </div>
+    </div>
+
   </div>
 
-  <div class="tl-item">
-    <div class="tl-time">09:30</div>
-    <div class="tl-body">
-      <h3>Breakfast at HELMo</h3>
-      <p>We arrived at the university and joined our teammates for breakfast. A good opportunity to catch up before the busy final day ahead.</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-time">10:00</div>
-    <div class="tl-body">
-      <h3>Presentation guidelines briefing</h3>
-      <p>The organisers held a short talk explaining how we were expected to present our project — structure, timing, and what the jury would be looking for. A useful guide before we got to work.</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-time">10:30</div>
-    <div class="tl-body">
-      <h3>Final preparations — team name & slides</h3>
-      <p>We gathered as a team to finalise the last details: agreeing on our team name and putting together the PowerPoint presentation we would deliver in front of the other participants and the jury. A focused but energetic working session.</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-time">12:00</div>
-    <div class="tl-body">
-      <h3>Lunch & conversations</h3>
-      <p>Over lunch we had the chance to chat with the lecturers and fellow participants about our respective projects. It was a relaxed and enjoyable break before the presentations began.</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-time">13:00</div>
-    <div class="tl-body">
-      <h3>Presentations — pitching to the jury</h3>
-      <p>The presentation session kicked off at 1 p.m. We listened to the proposals from the other teams, each addressing a different challenge that had been put forward at the start of the hackathon. We also took the stage ourselves, presenting our project in front of all participants and the jury. A memorable moment after days of hard work.</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-time">15:00</div>
-    <div class="tl-body">
-      <h3>Winners announced & closing celebration</h3>
-      <p>The jury announced the winners of the hackathon and we gathered for a small celebration with drinks. A great atmosphere to close out what had been an intense and rewarding weekend.</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-time">16:00</div>
-    <div class="tl-body">
-      <h3>Farewell & train back to Bruges</h3>
-      <p>With the hackathon officially over, we packed our things, said our goodbyes, and headed back to Bruges. Tired but satisfied — a weekend well spent.</p>
-    </div>
-  </div>
-
-</div>
 
 </div>
 
