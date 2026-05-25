@@ -27,7 +27,6 @@
       line-height: 1.7;
     }
 
-    /* NAV */
     nav {
       position: sticky; top: 0; z-index: 100;
       background: rgba(245,242,237,0.92);
@@ -50,7 +49,6 @@
     }
     .nav-links a:hover { color: var(--accent); }
 
-    /* HERO */
     .hero {
       max-width: 860px; margin: 0 auto;
       padding: 6rem 2rem 4rem;
@@ -76,7 +74,6 @@
     }
     .hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    /* SECTION TITLE */
     .section-header {
       max-width: 860px; margin: 0 auto;
       padding: 3rem 2rem 1.5rem;
@@ -91,7 +88,6 @@
       font-size: 0.875rem; color: var(--accent); text-decoration: none; font-weight: 500;
     }
 
-    /* BLOG GRID */
     .blog-grid {
       max-width: 860px; margin: 0 auto;
       padding: 0 2rem 4rem;
@@ -138,7 +134,6 @@
     }
     .post-body p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
 
-    /* TEAM */
     .team-grid {
       max-width: 860px; margin: 0 auto;
       padding: 0 2rem 5rem;
@@ -153,23 +148,15 @@
       text-align: center;
     }
     .avatar-photo {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      overflow: hidden;
+      width: 80px; height: 80px;
+      border-radius: 50%; overflow: hidden;
       margin: 0 auto 0.75rem;
       border: 2px solid var(--border);
     }
-    .avatar-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+    .avatar-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .team-card h4 { font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; }
     .team-card p { font-size: 0.8rem; color: var(--muted); }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
       text-align: center; padding: 2rem;
@@ -194,7 +181,6 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-text">
     <h1>Our journey <em>in pictures</em> and words</h1>
@@ -210,7 +196,6 @@
   </div>
 </section>
 
-<!-- BLOG ENTRIES -->
 <div class="section-header" id="entries">
   <h2>Latest entries</h2>
   <a href="#">View all →</a>
@@ -226,7 +211,7 @@
     <div class="post-body">
       <div class="post-meta">
         <span class="author-dot"></span>
-        <span>17 Apr 2026</span>
+        <span>Christopher Anguelov - 17 Apr 2026</span>
       </div>
       <h3>Day 1 - Arrival, opening ceremony & first team meeting</h3>
       <p>We departed Bruges at 14:58 by train and arrived in Liège before the 18:00 opening ceremony. After exploring the city and the HELMo campus, we attended the presentations from participating companies — including Siemens — formed our team, took part in a blindfolded rope challenge, and held our first strategy session before heading back to Bruges.</p>
@@ -241,7 +226,7 @@
     <div class="post-body">
       <div class="post-meta">
         <span class="author-dot"></span>
-        <span>18 Apr 2026</span>
+        <span>Erbol Khaliulin - 18 Apr 2026</span>
       </div>
       <h3>Day 2 - Deep work & challenge development</h3>
       <p>A full and energetic day, starting with a breakfast of waffles, powering through morning brainstorming sessions to finalise our approach, a lunch of pasta and coffee, a friendly foosball 2v2, a crossfit session at 4 p.m., and a productive evening pushing forward our solution for efficient food stock management in crisis situations.</p>
@@ -256,16 +241,45 @@
     <div class="post-body">
       <div class="post-meta">
         <span class="author-dot"></span>
-        <span>19 Apr 2026</span>
+        <span>Manel Cagigos - 19 Apr 2026</span>
       </div>
       <h3>Day 3 - Final presentation & wrap-up</h3>
       <p>The final day of the hackathon: pitching our project in front of the jury, listening to the other teams, and closing with the winners announcement and a well-deserved celebration.</p>
     </div>
   </a>
 
+  <!-- ENTRY 4 -->
+  <a class="post-card" href="about-project.html">
+    <div class="post-img">
+      <div class="ph">Add a photo</div>
+    </div>
+    <div class="post-body">
+      <div class="post-meta">
+        <span class="author-dot"></span>
+        <span>Eduard Nistratov - 20 Apr 2026</span>
+      </div>
+      <h3>About the project - our challenge & objective</h3>
+      <p>An overview of the HELMo Hackathon, the challenge we chose to tackle, and what we set out to achieve: building a more efficient solution for food stock management in crisis situations.</p>
+    </div>
+  </a>
+
+  <!-- ENTRY 5 -->
+  <a class="post-card" href="reflections.html">
+    <div class="post-img">
+      <div class="ph">Add a photo</div>
+    </div>
+    <div class="post-body">
+      <div class="post-meta">
+        <span class="author-dot"></span>
+        <span>The team · 20 Apr 2026</span>
+      </div>
+      <h3>Reflections - what we learned & teamwork</h3>
+      <p>Looking back on the hackathon weekend: the technical and soft skills we developed, how our teamwork evolved, and what we would do differently next time.</p>
+    </div>
+  </a>
+
 </div>
 
-<!-- TEAM -->
 <div class="section-header" id="team">
   <h2>The team</h2>
 </div>
@@ -276,28 +290,28 @@
       <img src="photos/chris.png" alt="Christopher Anguelov">
     </div>
     <h4>Christopher Anguelov</h4>
-    <p>Howest - Applied Computer Science</p>
+    <p>Howest · Applied Computer Science</p>
   </div>
   <div class="team-card">
     <div class="avatar-photo">
       <img src="photos/erbol.png" alt="Erbol Khaliulin">
     </div>
     <h4>Erbol Khaliulin</h4>
-    <p>Howest - Applied Computer Science</p>
+    <p>Howest · Applied Computer Science</p>
   </div>
   <div class="team-card">
     <div class="avatar-photo">
       <img src="photos/manolo.png" alt="Manel Cagigos">
     </div>
     <h4>Manel Cagigos</h4>
-    <p>Howest - Applied Computer Science</p>
+    <p>Howest · Applied Computer Science</p>
   </div>
   <div class="team-card">
     <div class="avatar-photo">
       <img src="photos/eduard.png" alt="Eduard Nistratov">
     </div>
     <h4>Eduard Nistratov</h4>
-    <p>Howest - Applied Computer Science</p>
+    <p>Howest · Applied Computer Science</p>
   </div>
 </div>
 
