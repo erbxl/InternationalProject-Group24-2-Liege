@@ -159,12 +159,19 @@
       padding: 1.5rem 1rem;
       text-align: center;
     }
-    .avatar {
-      width: 64px; height: 64px; border-radius: 50%;
-      background: var(--accent2); color: #fff;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem; display: flex; align-items: center; justify-content: center;
+    .avatar-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
       margin: 0 auto 0.75rem;
+      border: 2px solid var(--border);
+    }
+    .avatar-photo img {
+      width: 400%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .team-card h4 { font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; }
     .team-card p { font-size: 0.8rem; color: var(--muted); }
@@ -206,7 +213,7 @@
     </div>
   </div>
   <div class="hero-img">
-    <img src="photos/IMG_4188.jpeg" alt="Helmo Campus">
+    <img src="photos/IMG_4188.jpeg" alt="HELMo Campus">
   </div>
 </section>
 
@@ -218,7 +225,7 @@
 
 <div class="blog-grid">
 
-  <!-- ENTRY 1 — duplicate this block to add more entries -->
+  <!-- ENTRY 1 -->
   <a class="post-card" href="day-1.html">
     <div class="post-img">
       <img src="photos/ed305a4e-b7bf-4e74-a46d-1fcd98e727bb.jpeg" alt="Day 1 — Arrival in Liège">
@@ -251,7 +258,7 @@
   <!-- ENTRY 3 -->
   <a class="post-card" href="day-3.html">
     <div class="post-img">
-      <div class="ph">Add a photo</div>
+      <img src="photos/IMG_4221.jpeg" alt="Day 3 — Last day in Liège">
     </div>
     <div class="post-body">
       <div class="post-meta">
@@ -272,22 +279,38 @@
 
 <div class="team-grid">
   <div class="team-card">
-    <div class="avatar">T1</div>
+    <div class="avatar-photo">
+      <img src="photos/IMG_4221.jpeg" alt="Christopher Anguelov" style="object-position: 13% center;">
+    </div>
     <h4>Christopher Anguelov</h4>
+    <p>Howest · Applied Computer Science</p>
   </div>
   <div class="team-card">
-    <div class="avatar" style="background: #c8502a;">T2</div>
-    <h4>Manel Cagigos</h4>
-  </div>
-  <div class="team-card">
-    <div class="avatar" style="background: #2a8a5c;">T3</div>
+    <div class="avatar-photo">
+      <img src="photos/IMG_4221.jpeg" alt="Erbol Khaliulin" style="object-position: 38% center;">
+    </div>
     <h4>Erbol Khaliulin</h4>
+    <p>Howest · Applied Computer Science</p>
   </div>
   <div class="team-card">
-    <div class="avatar" style="background: #2a8a5c;">T4</div>
+    <div class="avatar-photo">
+      <img src="photos/IMG_4221.jpeg" alt="Manel Cagigos" style="object-position: 63% center;">
+    </div>
+    <h4>Manel Cagigos</h4>
+    <p>Howest · Applied Computer Science</p>
+  </div>
+  <div class="team-card">
+    <div class="avatar-photo">
+      <img src="photos/IMG_4221.jpeg" alt="Eduard Nistratov" style="object-position: 88% center;">
+    </div>
     <h4>Eduard Nistratov</h4>
+    <p>Howest · Applied Computer Science</p>
   </div>
 </div>
+
+<footer>
+  <p>International Project · Howest × HELMo · Made with ❤️ · Hosted on GitHub Pages</p>
+</footer>
 
 </body>
 </html>
