@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Three Days in Liège | International Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f5f2ed; --card: #fff; --text: #1a1a18; --muted: #6b6860;
+      --accent: #c8502a; --accent2: #2a5ca8; --border: rgba(0,0,0,0.10); --radius: 12px;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(245,242,237,0.92); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 60px;
+    }
+    .nav-logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; color: var(--text); text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .article-wrap { max-width: 720px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-bottom: 2.5rem; font-weight: 500; transition: color 0.2s; }
+    .back-link:hover { color: var(--accent); }
+    .entry-meta { display: flex; align-items: center; gap: 0.75rem; font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+    .entry-meta .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; margin-bottom: 0.75rem; }
+    h1 em { font-style: italic; color: var(--accent); }
+    .lead { font-size: 1.1rem; color: var(--muted); border-left: 3px solid var(--accent); padding-left: 1rem; margin: 1.5rem 0 2.5rem; line-height: 1.6; }
+    .entry-body { font-size: 1rem; line-height: 1.85; }
+    .entry-body p { margin-bottom: 1.4rem; }
+    .day-sep { display: flex; align-items: center; gap: 1rem; margin: 2.5rem 0 1.5rem; }
+    .day-sep time { font-size: 0.78rem; font-weight: 500; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; }
+    .day-sep hr { flex: 1; border: none; border-top: 1px solid var(--border); }
+    footer { border-top: 1px solid var(--border); text-align: center; padding: 2rem; font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#">International Project <span style="font-size: 0.8rem; font-weight: 400; color: var(--muted); letter-spacing: 0.05em;">Group 24-2</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#entries">Journal</a></li>
+    <li><a href="index.html#team">Team</a></li>
+  </ul>
+</nav>
+
+<div class="article-wrap">
+
+  <a class="back-link" href="index.html">← Back to journal</a>
+
+  <div class="entry-meta">
+    <span class="dot"></span>
+    <span>Eduard Nistratov</span>
+    <span>·</span>
+    <span>18–20 April 2026</span>
+  </div>
+
+  <h1>Three days in Liège, <em>my experience</em></h1>
+
+  <p class="lead">
+    Even though we were split into different groups, the three of us basically lived the same experience. Same trains, same meals, same activities, just different problems to solve once we sat down to work.
+  </p>
+
+  <div class="entry-body">
+
+    <div class="day-sep"><time>18 April</time><hr></div>
+    <p>
+      We travelled together from Bruges every day. The first day we arrived in Liège in the late afternoon, walked around the campus for a bit, and then sat through the opening ceremony where companies pitched their challenges. That's where I first heard about the Siemens Andromeda project, and that's the one I ended up on. Because of a rule that limited the number of Howest students per group to three, we got split up. I joined a team with HELMo students and we spent the rest of that evening figuring out the problem and planning what to do the next day.
+    </p>
+
+    <div class="day-sep"><time>19 April</time><hr></div>
+    <p>
+      The second day was the hardest. We came in, had waffles, and got straight to work. For me the biggest challenge was building the data pipeline, connecting all the edge nodes from the Siemens system and getting the raw JSON into a format the dashboard could actually use. It took most of the morning and a good chunk of the afternoon. At some point we took a break for foosball with some of the other teams, and later the organisers ran a crossfit session outside. It started raining halfway through but nobody stopped. After that I came back and focused on integrating the AI assistant into the dashboard, which took the rest of the evening. We had dinner and took the train home pretty exhausted.
+    </p>
+
+    <div class="day-sep"><time>20 April</time><hr></div>
+    <p>
+      The last day we got there early, had breakfast, and spent the morning finishing the slides and making sure the live demo worked. The presentations started after lunch, all the teams went up one by one. When it was my turn I walked the jury through the problem, showed how the pipeline worked, and demoed the dashboard with the AI assistant live. After the winners were announced we had a drink with everyone, said our goodbyes, and took the train back to Bruges. Three days went by fast. But between the people, the work, and everything in between, it was worth every hour of it.
+    </p>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>International Project - Howest × HELMo</p>
+</footer>
+
+</body>
+</html>
